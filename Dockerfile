@@ -11,3 +11,5 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && rm packages-microsoft-prod.deb
+
+ENV PATH="${PATH}:/opt/mssql-tools/bin:/opt/mssql-tools18/bin"
